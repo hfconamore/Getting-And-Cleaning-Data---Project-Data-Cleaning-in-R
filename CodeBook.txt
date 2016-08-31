@@ -1,0 +1,42 @@
+=====================================
+DATA DICTIONARY 
+=====================================
+
+
+(1) dataset: avg_features_wide
+
+activity: a factor variable categorizing the six activities the subjects performed wearing a smartphone (Samsung Galaxy S II) on the waist.
+(values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+subject: an identifier of the subject who carried out the experiment. There are 30 subjects in total, 21 of them are in the training group and the remaining 9 are in the test group.
+(values: 1 ~ 30)
+
+group: an idendifier of the group the subject belongs to.
+(values: 0 - test, 1 - train)
+
+avg_tBodyAcc-mean()-X ~ avg_fBodyBodyGyroJerkMag-std (66 variables): the average of each extracted measurement for each activity and each subject. The names of these variables are consistent with their counterparts in the original features.txt file.
+(values: [-1, 1])
+
+
+(1) dataset: avg_features_long
+activity: same as in dataset avg_features_wide
+subject: same as in dataset avg_features_wide
+group: same as in dataset avg_features_wide
+
+measurement: names of the extracted measurements whose mean value are calculated based on each activity and subject combination. 
+(values: 66 extracted measurements, see the original features.txt file for detail.)
+
+avg: the average value of each measurement
+(values: [-1, 1])
+
+
+
+
+
+
+
+
+
+
+
+
